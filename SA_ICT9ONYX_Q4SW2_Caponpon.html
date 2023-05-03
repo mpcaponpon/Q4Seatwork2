@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style type="text/css">
+		.background-color{
+			background-color: antiquewhite;
+		}
+	</style>
+	<title>Q4 Seatwork 2</title>
+</head>
+<body class="background-color">
+<div class="container">
+	<p id="DT"></p>
+	<script>
+		const D = new Date();
+		document.getElementById('DT').innerHTML = D;
+	</script>
+	<h1 style="background-color: #000000; color: white; text-align: center;">Temperature Conversion: °F to °C</h1>
+	<form>
+<br>
+		<center><b>Convert °F to °C <input type="text" id="num1">
+<br>
+<br>
+		<button type="submit" onclick="Compute()">Convert</button>
+	</form></center>
+		<script type="text/javascript">
+			function Compute(){
+				let num1 = document.getElementById("num1").value;
+				let celsius = (num1 - 32) * 5/9;
+				window.alert("The Value in °C is: " + celsius);
+			}
+</script>
+	<h5>Conversion</h5>
+	<p>-273.15 °C = Zero 
+<br> 0 °C = Freezing or Melting point of water 
+<br> 21 °C = Room Temperature 
+<br> 37 °C = Average body temperature 
+<br> 100 °C = Boiling point of water</p>
+	</div></center>
+</body>
+</html>
